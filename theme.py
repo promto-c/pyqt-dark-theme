@@ -7,6 +7,9 @@ STYLE_SHEET_PATH_DICT = {
     'dark': os.path.join(THEME_PATH, 'dark_theme.css')
 }
 
+DEFAULT_ICON_PATH = 'icons'
+CURRENT_ICON_PATH = os.path.join(THEME_PATH, DEFAULT_ICON_PATH).replace('\\', '/')
+
 def setTheme(app, theme: str='default') -> None:
     ''' This function use to set theme for "QApplication", support for "PySide2" and "PyQt5"
     '''
@@ -40,7 +43,7 @@ def setTheme(app, theme: str='default') -> None:
 
         # set dark theme style sheet
         with open(STYLE_SHEET_PATH_DICT[theme], 'r') as style_sheet:
-            app.setStyleSheet(style_sheet.read())
+            app.setStyleSheet(style_sheet.read().replace(DEFAULT_ICON_PATH, CURRENT_ICON_PATH))
     
     # Check if the theme is set to 'default'
     elif theme == 'default':
