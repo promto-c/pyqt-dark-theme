@@ -1,6 +1,7 @@
 # pyqt-dark-theme
 A Python package that provides a dark theme for PyQt5 and PySide2 applications, as well as a dark theme for Matplotlib plots.
 
+---
 ## Usage
 The theme.py file contains the following functions:
 
@@ -14,6 +15,42 @@ setMatplotlibDarkTheme()
 ```
 This function sets the theme of Matplotlib plots to a dark theme.
 
+---
+## Example usage
+
+### For PyQt5:
+```python
+import sys
+from PyQt5 import QtWidgets
+from theme import setTheme
+
+app = QtWidgets.QApplication(sys.argv)
+
+# Set theme of QApplication to the dark theme
+setTheme(app, theme='dark')
+
+# Your PyQt5 application code here
+
+sys.exit(app.exec_())
+```
+
+### For PySide2:
+```python
+import sys
+from PySide2 import QtWidgets
+from theme import setTheme
+
+app = QtWidgets.QApplication(sys.argv)
+
+# Set theme of QApplication to the dark theme
+setTheme(app, theme='dark')
+
+# Your PySide2 application code here
+
+sys.exit(app.exec_())
+```
+
+---
 ## Files
 The repository contains the following files:
 
