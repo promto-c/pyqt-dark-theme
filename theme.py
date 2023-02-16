@@ -10,7 +10,7 @@ STYLE_SHEET_PATH_DICT = {
 DEFAULT_ICON_PATH = 'icons'
 CURRENT_ICON_PATH = os.path.join(THEME_PATH, DEFAULT_ICON_PATH).replace('\\', '/')
 
-def setTheme(app, theme: str='default') -> None:
+def set_theme(app, theme: str = 'default') -> None:
     ''' This function use to set theme for "QApplication", support for "PySide2" and "PyQt5"
     '''
     # Get the name of the library that the app object belongs to
@@ -53,7 +53,7 @@ def setTheme(app, theme: str='default') -> None:
         # Reset the application palette to the default palette
         app.setPalette(QtGui.QPalette())
 
-def setMatplotlibDarkTheme() -> None:
+def set_matplotlib_dark_theme() -> None:
     ''' This function sets the theme of Matplotlib plots to a dark theme.
     '''
     # Import the Matplotlib library and the Pyplot submodule
