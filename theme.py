@@ -11,8 +11,8 @@ DEFAULT_ICON_PATH = 'icons'
 CURRENT_ICON_PATH = os.path.join(THEME_PATH, DEFAULT_ICON_PATH).replace('\\', '/')
 
 def set_theme(app, theme: str = 'default') -> None:
-    ''' This function use to set theme for "QApplication", support for "PySide2" and "PyQt5"
-    '''
+    """This function use to set theme for "QApplication", support for "PySide2" and "PyQt5"
+    """
     # Get the name of the library that the app object belongs to
     lib_name = app.__module__.split('.')[0]
 
@@ -54,8 +54,8 @@ def set_theme(app, theme: str = 'default') -> None:
         app.setPalette(QtGui.QPalette())
 
 def set_matplotlib_dark_theme() -> None:
-    ''' This function sets the theme of Matplotlib plots to a dark theme.
-    '''
+    """This function sets the theme of Matplotlib plots to a dark theme.
+    """
     # Import the Matplotlib library and the Pyplot submodule
     import matplotlib
     import matplotlib.pyplot as plt
