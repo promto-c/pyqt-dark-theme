@@ -172,7 +172,7 @@ QPushButton {
     background-color: rgb(71, 71, 71);
     border: 2px solid rgb(76, 76, 76);
     border-radius: 5px;
-    padding: 3px 3px;
+    padding: 1px 3px;
     color: rgb(210, 210, 210);
 }
 
@@ -189,7 +189,7 @@ QPushButton:pressed {
 
 QPushButton:disabled {
     background-color: rgb(44, 44, 44);
-    border: 2px solid rgb(57, 57, 57);
+    border: 2px solid rgb(65, 65, 65);
     color: rgb(144, 144, 144);
 }
 
