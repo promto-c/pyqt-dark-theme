@@ -169,7 +169,7 @@ QLabel:focus {
 /* Buttons */
 
 QPushButton {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(65, 65, 65);
     border: 2px solid rgb(76, 76, 76);
     border-radius: 5px;
     padding: 1px 3px;
@@ -177,8 +177,8 @@ QPushButton {
 }
 
 QPushButton:hover {
-    background-color: rgb(76, 76, 76);
-    border: 2px solid rgb(71, 76, 88);
+    background-color: rgb(82, 82, 82);
+    border: 2px solid rgb(82, 82, 82);
 }
 
 QPushButton:pressed {
@@ -207,8 +207,8 @@ QToolButton {
 }
 
 QToolButton:hover {
-    background-color: rgb(76, 76, 76);
-    border: 2px solid rgb(71, 76, 88);
+    background-color: rgb(82, 82, 82);
+    border: 2px solid rgb(82, 82, 82);
 }
 
 QToolButton:pressed {
@@ -368,7 +368,7 @@ QComboBox {
     background-color: rgb(65, 65, 65);
     border: 2px solid rgb(65, 65, 65);
     border-radius: 5px;
-    padding: 1px 3px;
+    padding: 1px 0px 1px 3px;
     color: rgb(210, 210, 210);
 }
 
@@ -490,7 +490,7 @@ QDateEdit {
     background-color: rgb(65, 65, 65);
     border: 2px solid rgb(65, 65, 65);
     border-radius: 5px;
-    padding: 1px 3px;
+    padding: 1px 0px 1px 3px;
     color: rgb(210, 210, 210);
 }
 
