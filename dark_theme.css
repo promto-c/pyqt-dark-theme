@@ -253,6 +253,11 @@ QCheckBox:checked {
 
 /* Item Widgets */
 
+QHeaderView {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 QHeaderView:section {
     color: rgb(144, 144, 144);
     background: rgb(57, 57, 57);
@@ -326,6 +331,10 @@ QTreeWidget:disabled {
 
 QTreeWidget:hover {
     border: 2px solid rgb(82, 82, 82);
+}
+
+QTreeWidget:focus {
+    border: 2px solid rgb(125, 134, 138);
 }
 
 QTreeWidget::item {
