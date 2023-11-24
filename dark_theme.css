@@ -13,6 +13,12 @@ QMenuBar:disabled {
     color: rgb(102, 102, 102);
 }
 
+QMenu {
+    border: 2px solid rgb(67, 71, 74);
+    background-color: rgb(14, 14, 14);
+    border-radius: 8px;
+}
+
 QMenu::item:disabled {
     color: rgb(102, 102, 102);
     background-color: transparent;
@@ -253,11 +259,6 @@ QCheckBox:checked {
 
 /* Item Widgets */
 
-QHeaderView {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
 QHeaderView:section {
     color: rgb(144, 144, 144);
     background: rgb(57, 57, 57);
@@ -331,10 +332,6 @@ QTreeWidget:disabled {
 
 QTreeWidget:hover {
     border: 2px solid rgb(82, 82, 82);
-}
-
-QTreeWidget:focus {
-    border: 2px solid rgb(125, 134, 138);
 }
 
 QTreeWidget::item {
