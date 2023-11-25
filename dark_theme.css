@@ -344,6 +344,49 @@ QTreeWidget::item:selected {
     background-color: rgba(110, 120, 125, 65);
 }
 
+QTreeView {
+    border: 2px solid rgb(65, 65, 65);
+    background-color: rgb(29, 29, 29);
+    border-radius: 5px;
+    padding: 0px;
+    padding-bottom: 6px;
+    color: rgb(210, 210, 210);
+}
+
+QTreeView::indicator {
+    background-color: rgba(78, 78, 78, 57);
+    border: 2px solid rgba(57, 57, 57, 57);
+    border-radius: 4px;
+}
+
+QTreeView::indicator:checked {
+    background: 3px solid rgb(144, 144, 144);
+    border: 2px solid rgba(67, 71, 77, 57);
+}
+
+QTreeView::indicator:hover {
+    border: 2px solid rgba(78, 78, 78);
+    border-radius: 4px;
+}
+
+QTreeView:disabled {
+    color: rgb(102, 102, 102);
+}
+
+QTreeView:hover {
+    border: 2px solid rgb(82, 82, 82);
+}
+
+QTreeView::item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border: 1px solid rgb(44, 44, 44);
+}
+
+QTreeView::item:selected {
+    background-color: rgba(110, 120, 125, 65);
+}
+
 QTableWidget {
     border: 2px solid rgb(65, 65, 65);
     background: rgb(44, 44, 44);
