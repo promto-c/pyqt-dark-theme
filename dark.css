@@ -209,17 +209,18 @@ QToolButton {
     border-radius: 5px;
     background-color: transparent;
     padding: 1px 3px;
+    border: 2px transparent;
     color: rgb(210, 210, 210);
 }
 
 QToolButton:hover {
     background-color: rgb(82, 82, 82);
-    border: 2px solid rgb(82, 82, 82);
+    border-color:rgb(82, 82, 82);
 }
 
 QToolButton:pressed {
     background-color: rgb(39, 39, 39);
-    border: 2px solid rgb(47, 50, 57);
+    border-color: rgb(47, 50, 57);
 }
 
 QToolButton:disabled {
