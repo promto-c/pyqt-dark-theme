@@ -557,12 +557,13 @@ QComboBox::down-arrow {
 
 QComboBox[widget-style="round"] {
     background-color: transparent;
-    color: #999;
+    color: #AAA;
     text-align: left;
     border-radius: 12px;
 }
 QComboBox[widget-style="round"][active="true"] {
-    border-color: #7AB;
+    background-color: rgba(119, 170, 187, 51);
+    border-color: #6AB;
     color: #DDD;
 }
 QComboBox[widget-style="round"][active="true"]:hover {
