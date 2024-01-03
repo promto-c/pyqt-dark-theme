@@ -202,11 +202,11 @@ QPushButton:checked {
 }
 
 QPushButton[color="blue"] {
-    background-color: #47B;
+    background-color: #48B;
     color: white;
 }
 QPushButton[color="blue"]:hover {
-    background-color: #58C;
+    background-color: #59C;
 }
 QPushButton[color="blue"]:pressed {
     background-color: #369;
