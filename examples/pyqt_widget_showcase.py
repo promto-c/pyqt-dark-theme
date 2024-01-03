@@ -124,7 +124,13 @@ class DemoWindow(QtWidgets.QMainWindow):
         # Button Widgets Group
         button_group = QtWidgets.QGroupBox("Button Widgets")
         button_layout = QtWidgets.QHBoxLayout(button_group)
+        checkable_button = QtWidgets.QPushButton("Checkable PushButton")
+        checkable_button.setCheckable(True)
         button_layout.addWidget(QtWidgets.QPushButton("PushButton"))
+        button_layout.addWidget(checkable_button)
+        tool_button = QtWidgets.QToolButton(button_group)
+        tool_button.setText('Tool Button')
+        button_layout.addWidget(tool_button)
         button_layout.addWidget(QtWidgets.QCheckBox("CheckBox"))
         button_layout.addWidget(QtWidgets.QRadioButton("RadioButton"))
 
