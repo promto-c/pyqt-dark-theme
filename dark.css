@@ -243,6 +243,7 @@ QPushButton[color="yellow"]:hover {
 }
 QPushButton[color="yellow"]:pressed {
     background-color: #DB2;
+
 }
 
 QToolButton {
