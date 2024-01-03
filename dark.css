@@ -202,11 +202,11 @@ QPushButton:checked {
 }
 
 QPushButton[color="blue"] {
-    background-color: #47B;
+    background-color: #48B;
     color: white;
 }
 QPushButton[color="blue"]:hover {
-    background-color: #58C;
+    background-color: #59C;
 }
 QPushButton[color="blue"]:pressed {
     background-color: #369;
@@ -268,6 +268,10 @@ QToolButton:disabled {
     background-color: #222;
     border: 2px solid #333;
     color: #999;
+}
+
+QToolButton[color="red"]:hover {
+    background-color: #800;  /* Dark Red */
 }
 
 QCheckBox {
@@ -551,6 +555,37 @@ QComboBox::down-arrow {
     height: 12px;
 }
 
+QComboBox[widget-style="round"] {
+    background-color: transparent;
+    color: #AAA;
+    text-align: left;
+    border-radius: 12px;
+}
+QComboBox[widget-style="round"][active="true"] {
+    background-color: rgba(119, 170, 187, 51);
+    border-color: #6AB;
+    color: #DDD;
+}
+QComboBox[widget-style="round"][active="true"]:hover {
+    border-color: #8BC;
+}
+
+QComboBox[widget-style="clean"] {
+    color: #999;
+    background: transparent;
+    padding: 0 0;
+    border: None;
+    text-align: left;
+    font-size: 12px;
+}
+QComboBox[widget-style="clean"]:hover {
+    color: rgb(210, 210, 210);
+}
+QComboBox[widget-style="clean"]::down-arrow {
+    width: 10;
+    height: 10;
+}
+
 QLineEdit {
     border-radius: 4px;
     background-color: #181818;
@@ -565,6 +600,10 @@ QLineEdit:hover {
 
 QLineEdit:focus {
     border: 2px solid #788;
+}
+
+QLineEdit[has_placeholder="true"][text=""]{
+    color: gray;
 }
 
 QTextEdit {
