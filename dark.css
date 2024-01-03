@@ -270,6 +270,10 @@ QToolButton:disabled {
     color: #999;
 }
 
+QToolButton[color="red"]:hover {
+    background-color: #800;  /* Dark Red */
+}
+
 QCheckBox {
     color: #999;
 }
@@ -549,6 +553,36 @@ QComboBox::down-arrow {
     image: url(icons/drop-down.svg);
     width: 12px;
     height: 12px;
+}
+
+QComboBox[widget-style="round"] {
+    background-color: transparent;
+    color: #999;
+    text-align: left;
+    border-radius: 12px;
+}
+QComboBox[widget-style="round"][active="true"] {
+    border-color: #7AB;
+    color: #DDD;
+}
+QComboBox[widget-style="round"][active="true"]:hover {
+    border-color: #8BC;
+}
+
+QComboBox[widget-style="clean"] {
+    color: #999;
+    background: transparent;
+    padding: 0 0;
+    border: None;
+    text-align: left;
+    font-size: 12px;
+}
+QComboBox[widget-style="clean"]:hover {
+    color: rgb(210, 210, 210);
+}
+QComboBox[widget-style="clean"]::down-arrow {
+    width: 10;
+    height: 10;
 }
 
 QLineEdit {
