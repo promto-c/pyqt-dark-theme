@@ -602,6 +602,10 @@ QLineEdit:focus {
     border: 2px solid #788;
 }
 
+QLineEdit[has_placeholder="true"][text=""]{
+    color: gray;
+}
+
 QTextEdit {
     border-radius: 4px;
     background-color: #181818;
