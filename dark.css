@@ -203,25 +203,28 @@ QPushButton:checked {
 
 QPushButton[color="blue"] {
     /* background-color: #48B; */
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.75, 
-                                stop:0 rgba(76, 188, 219, 195), 
-                                stop:0.8 rgba(51, 176, 196, 196), 
-                                stop:1 rgba(0, 165, 196, 196));
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.75,
+                                stop:0 rgba(99, 196, 255, 195), 
+                                stop:0.1 rgba(42, 176, 204, 195), 
+                                stop:0.5 rgba(26, 151, 196, 196), 
+                                stop:1 rgba(0, 144, 196, 196));
     color: white;
 }
 QPushButton[color="blue"]:hover {
     /* background-color: #59C; */
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
-                                stop:0 rgba(76, 188, 219, 216), 
-                                stop:0.99 rgba(51, 176, 196, 216),                                 stop:1 rgba(0, 165, 196, 216));
+                                stop:0 rgba(42, 176, 204, 216), 
+                                stop:0.99 rgba(26, 151, 196, 216), 
+                                stop:1 rgba(0, 123, 196, 216));
 }
 QPushButton[color="blue"]:pressed {
     /* background-color: #369; */
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
-                                stop:0 rgba(76, 188, 219, 125), 
-                                stop:0.1 rgba(51, 176, 196, 125), 
-                                stop:1 rgba(0, 165, 196, 125));
+                                stop:0 rgba(42, 176, 204, 125), 
+                                stop:0.1 rgba(26, 151, 196, 125), 
+                                stop:1 rgba(0, 123, 196, 125));
 }
+
 
 QPushButton[color="red"] {
     background-color: #F44;
@@ -569,8 +572,13 @@ QComboBox::down-arrow {
 QComboBox[widget-style="round"] {
     background-color: transparent;
     color: #AAA;
+    border-color: #666;
     text-align: left;
     border-radius: 12px;
+}
+QComboBox[widget-style="round"]:hover {
+    color: #CCC;
+    border-color: #888;
 }
 QComboBox[widget-style="round"][active="true"] {
     background-color: rgba(119, 170, 187, 51);
