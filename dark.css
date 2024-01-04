@@ -202,14 +202,25 @@ QPushButton:checked {
 }
 
 QPushButton[color="blue"] {
-    background-color: #48B;
+    /* background-color: #48B; */
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.75, 
+                                stop:0 rgba(76, 188, 219, 195), 
+                                stop:0.8 rgba(51, 176, 196, 196), 
+                                stop:1 rgba(0, 165, 196, 196));
     color: white;
 }
 QPushButton[color="blue"]:hover {
-    background-color: #59C;
+    /* background-color: #59C; */
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                stop:0 rgba(76, 188, 219, 216), 
+                                stop:0.99 rgba(51, 176, 196, 216),                                 stop:1 rgba(0, 165, 196, 216));
 }
 QPushButton[color="blue"]:pressed {
-    background-color: #369;
+    /* background-color: #369; */
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                stop:0 rgba(76, 188, 219, 125), 
+                                stop:0.1 rgba(51, 176, 196, 125), 
+                                stop:1 rgba(0, 165, 196, 125));
 }
 
 QPushButton[color="red"] {
@@ -357,13 +368,13 @@ QListWidget:hover  {
 }
 
 QListWidget::indicator {
-    background-color: rgba(85, 85, 85, 0.2);
+    background-color: rgba(85, 85, 85, 51);
     border: 2px solid #333;
     border-radius: 4px;
 }
 
 QListWidget::indicator:checked {
-    background: 3px solid rgba(238, 238, 238, 0.2);
+    background: 3px solid rgba(238, 238, 238, 51);
     border: 2px solid #344;
 }
 
@@ -390,13 +401,13 @@ QListView:hover  {
 }
 
 QListView::indicator {
-    background-color: rgba(85, 85, 85, 0.2);
+    background-color: rgba(85, 85, 85, 51);
     border: 2px solid #333;
     border-radius: 4px;
 }
 
 QListView::indicator:checked {
-    background: 3px solid rgba(238, 238, 238, 0.2);
+    background: 3px solid rgba(238, 238, 238, 51);
     border: 2px solid #344;
 }
 
@@ -419,14 +430,14 @@ QTreeWidget {
 }
 
 QTreeWidget::indicator {
-    background-color: rgba(85, 85, 85, 0.2);
-    border: 2px solid rgba(51, 51, 51, 0.2);
+    background-color: rgba(85, 85, 85, 51);
+    border: 2px solid rgba(51, 51, 51, 51);
     border-radius: 4px;
 }
 
 QTreeWidget::indicator:checked {
     background: 3px solid #999;
-    border: 2px solid rgba(51, 68, 68, 0.2);
+    border: 2px solid rgba(51, 68, 68, 51);
 }
 
 QTreeWidget::indicator:hover {
@@ -449,7 +460,7 @@ QTreeWidget::item {
 }
 
 QTreeWidget::item:selected {
-    background-color: rgba(102, 119, 119, 0.2);
+    background-color: rgba(102, 119, 119, 51);
 }
 
 QTreeView {
@@ -462,14 +473,14 @@ QTreeView {
 }
 
 QTreeView::indicator {
-    background-color: rgba(85, 85, 85, 0.2);
-    border: 2px solid rgba(51, 51, 51, 0.2);
+    background-color: rgba(85, 85, 85, 51);
+    border: 2px solid rgba(51, 51, 51, 51);
     border-radius: 4px;
 }
 
 QTreeView::indicator:checked {
     background: 3px solid #999;
-    border: 2px solid rgba(51, 68, 68, 0.2);
+    border: 2px solid rgba(51, 68, 68, 51);
 }
 
 QTreeView::indicator:hover {
@@ -492,7 +503,7 @@ QTreeView::item {
 }
 
 QTreeView::item:selected {
-    background-color: rgba(102, 119, 119, 0.2);
+    background-color: rgba(102, 119, 119, 51);
 }
 
 QTableWidget {
