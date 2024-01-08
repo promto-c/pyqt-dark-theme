@@ -14,7 +14,7 @@ QMenuBar:disabled {
 }
 
 QMenu {
-    border: 2px solid #111;
+    border: 2px solid #444;
     background-color: #111;
     border-radius: 8px;
 }
