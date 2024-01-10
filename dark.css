@@ -204,8 +204,8 @@ QPushButton:checked {
 QPushButton[color="blue"] {
     /* background-color: #48B; */
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.75,
-                                stop:0 rgba(99, 196, 255, 195), 
-                                stop:0.1 rgba(42, 176, 204, 195), 
+                                stop:0 rgba(99, 196, 255, 196), 
+                                stop:0.1 rgba(42, 176, 204, 196), 
                                 stop:0.5 rgba(26, 151, 196, 196), 
                                 stop:1 rgba(0, 144, 196, 196));
     color: white;
@@ -598,7 +598,7 @@ QComboBox[widget-style="clean"] {
     font-size: 12px;
 }
 QComboBox[widget-style="clean"]:hover {
-    color: rgb(210, 210, 210);
+    color: #DDD;
 }
 QComboBox[widget-style="clean"]::down-arrow {
     width: 10;
@@ -618,6 +618,10 @@ QLineEdit[widget-style="round"] {
     border-color: #666;
     text-align: left;
     border-radius: 12px;
+}
+QLineEdit[widget-style="round"]:hover {
+    color: #CCC;
+    border-color: #888;
 }
 
 QLineEdit:hover {
