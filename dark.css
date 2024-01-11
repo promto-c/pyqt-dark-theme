@@ -201,6 +201,10 @@ QPushButton:checked {
     color: #999;
 }
 
+QPushButton:focus {
+    border: 2px solid #788;
+}
+
 QPushButton[color="blue"] {
     /* background-color: #48B; */
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.75,
@@ -543,6 +547,10 @@ QComboBox {
     color: #DDD;
 }
 
+QComboBox:focus {
+    border: 2px solid #788;
+}
+
 QComboBox::editable {
     background-color: #222;
 }
@@ -580,6 +588,10 @@ QComboBox[widget-style="round"]:hover {
     color: #CCC;
     border-color: #888;
 }
+QComboBox[widget-style="round"]:focus {
+    border: 2px solid #788;
+}
+
 QComboBox[widget-style="round"][active="true"] {
     background-color: rgba(119, 170, 187, 51);
     border-color: #6AB;
