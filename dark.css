@@ -589,16 +589,20 @@ QComboBox[widget-style="round"]:hover {
     border-color: #888;
 }
 QComboBox[widget-style="round"]:focus {
-    border: 2px solid #788;
+    border-color: #788;
 }
 
-QComboBox[widget-style="round"][active="true"] {
+QComboBox[active="true"] {
     background-color: rgba(119, 170, 187, 51);
-    border-color: #6AB;
+    border-color: #7AB;
     color: #DDD;
 }
-QComboBox[widget-style="round"][active="true"]:hover {
+QComboBox[active="true"]:hover {
     border-color: #8BC;
+    color: #DDD;
+}
+QComboBox[widget-style="round"][active="true"]:focus {
+    border-color: #7BC;
 }
 
 QComboBox[widget-style="clean"] {
