@@ -24,6 +24,10 @@ QMenu::item:disabled {
     background-color: transparent;
 }
 
+QMenu::item:selected {
+    background-color: rgba(144, 165, 165, 65);
+}
+
 QMenu::separator {
     background-color: #222;
 }
