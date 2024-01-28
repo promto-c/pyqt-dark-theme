@@ -209,6 +209,21 @@ QPushButton:focus {
     border: 2px solid #788;
 }
 
+QPushButton[widget-style="round"] {
+    background-color: transparent;
+    color: #AAA;
+    border-color: #666;
+    text-align: left;
+    border-radius: 12px;
+}
+QPushButton[widget-style="round"]:hover {
+    color: #CCC;
+    border-color: #888;
+}
+QPushButton[widget-style="round"]:focus {
+    border-color: #788;
+}
+
 QPushButton[color="blue"] {
     /* background-color: #48B; */
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.75,
@@ -272,7 +287,7 @@ QToolButton {
     border-radius: 4px;
     background-color: transparent;
     padding: 1px 3px;
-    border: 2px transparent;
+    border: 2px solid transparent;
     color: #DDD;
 }
 
@@ -283,17 +298,29 @@ QToolButton:hover {
 QToolButton:pressed {
     background-color: #222;
     color: #888;
-    border: 2px solid #333;
+    border-color: #333;
 }
 
 QToolButton:disabled {
     background-color: #222;
-    border: 2px solid #333;
+    border-color: #333;
     color: #999;
 }
 
+QToolButton[widget-style="round"] {
+    border-radius: 12px;
+}
+QToolButton[widget-style="round"]:hover {
+    background-color: #444;
+    border-color: #666;
+}
+QToolButton[widget-style="round"]:pressed {
+    background-color: #222;
+    border-color: #333;
+}
+
 QToolButton[color="red"]:hover {
-    background-color: #800;  /* Dark Red */
+    background-color: #800;
 }
 
 QCheckBox {
