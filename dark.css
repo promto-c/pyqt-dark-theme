@@ -52,7 +52,7 @@ QGroupBox {
 }
 
 QScrollArea {
-    border: 2px solid #444;
+    border: 2px solid #555;
     background: #222;
     width: 10px;
     border-radius: 4px;
@@ -169,7 +169,7 @@ QLabel {
 }
 
 QLabel:hover {
-    border: 2px solid #555;
+    border-color: #666;;
 }
 
 QLabel:focus {
@@ -178,6 +178,37 @@ QLabel:focus {
 
 /* Buttons */
 QPushButton {
+    background-color: #444;
+    border: 2px solid #555;
+    border-radius: 4px;
+    padding: 1px 3px;
+    color: #DDD;
+}
+
+QPushButton:hover {
+    background-color: #555;
+    border-color: #666;
+}
+
+QPushButton:pressed {
+    background-color: #222;
+    border-color: #333;
+    color: #888;
+}
+
+QPushButton:disabled {
+    background-color: #333;
+    border-color: #555;
+    color: #999;
+}
+
+QPushButton:checked {
+    background-color: #222;
+    border-color: #888;
+    color: #999;
+}
+
+QPushButton[widget-style="borderless"] {
     border: 0px solid;
     border-radius: 4px;
     padding: 4px 8px;
@@ -185,29 +216,29 @@ QPushButton {
     color: #DDD;
 }
 
-QPushButton:hover {
+QPushButton:hover[widget-style="borderless"] {
     background-color: #555;
 }
 
-QPushButton:pressed {
+QPushButton:pressed[widget-style="borderless"] {
     background-color: #333;
     color: #888;
 }
 
-QPushButton:disabled {
+QPushButton:disabled[widget-style="borderless"] {
     background-color: #222;
     color: #999;
 }
 
-QPushButton:checked {
+QPushButton:checked[widget-style="borderless"] {
     background-color: #222;
     border: 2px solid #788;
     color: #999;
 }
 
-QPushButton:focus {
+/* QPushButton:focus[widget-style="borderless"] {
     border: 2px solid #788;
-}
+} */
 
 QPushButton[widget-style="round"] {
     background-color: transparent;
@@ -392,39 +423,6 @@ QHeaderView:section {
     padding: 2px 4px;
 }
 
-QListWidget {
-    background-color: #181818;
-    border: 2px solid #333;
-    border-radius: 4px;
-    padding: 0px;
-    color: #DDD;
-}
-
-QListWidget:hover  {
-    border: 2px solid #555;
-    border-radius: 4px;
-}
-
-QListWidget::indicator {
-    background-color: rgba(85, 85, 85, 51);
-    border: 2px solid #333;
-    border-radius: 4px;
-}
-
-QListWidget::indicator:checked {
-    background: 3px solid rgba(238, 238, 238, 51);
-    border: 2px solid #444;
-}
-
-QListWidget::indicator:hover {
-    background: 2x solid #444;
-    border-radius: 4px;
-}
-
-QListWidget:disabled {
-    color: #666;
-}
-
 QListView {
     background-color: #181818;
     border: 2px solid #333;
@@ -458,6 +456,14 @@ QListView:disabled {
     color: #666;
 }
 
+QListView::item {
+    border: 1px solid #222;
+}
+
+QListView::item:hover {
+    border-color: #444;
+}
+
 QTreeView {
     border: 2px solid #444;
     background-color: #181818;
@@ -479,7 +485,7 @@ QTreeView::indicator:checked {
 }
 
 QTreeView::indicator:hover {
-    border: 2px solid #444;
+    border-color: #555;
     border-radius: 4px;
 }
 
@@ -488,7 +494,7 @@ QTreeView:disabled {
 }
 
 QTreeView:hover {
-    border: 2px solid #555;
+    border-color: #555;
 }
 
 QTreeView::item {
@@ -497,39 +503,44 @@ QTreeView::item {
     border: 1px solid #222;
 }
 
+QTreeView::item:hover {
+    border-color: #444;
+}
+
 QTreeView::item:selected {
     background-color: rgba(144, 165, 165, 65);
 }
 
-QTableWidget {
+QTableView {
     border: 2px solid #444;
-    background: #222;
+    background: #181818;
     border-radius: 4px;
 }
 
 QTableCornerButton::section {
-    border: 2px solid #333;
-    background: #333;
-    border-radius: 4px;
-}
-
-QTableWidget:hover {
-    border: 2px solid #555;
+    border-color: #333;
     background: #222;
-    border-radius: 4px;
 }
 
-QTableWidget:item {
-    border: 2px solid #444;
+QTableView:hover {
+    border-color:#555;
+}
+
+QTableView::item {
+    border: 2px solid #333;
     color: #DDD;
-    border-radius: 4px;
+}
+
+QTableView::item:hover {
+    border-color: #444;
+    color: #DDD;
 }
 
 /* Input Widgets */
 
 QComboBox {
     background-color: #444;
-    border: 2px solid #444;
+    border: 2px solid #555;
     border-radius: 4px;
     padding: 1px 0px 1px 3px;
     color: #DDD;
@@ -548,7 +559,7 @@ QComboBox::editable:focus {
 }
 
 QComboBox:hover {
-    border: 2px solid #555;
+    border-color: #666;;
 }
 
 QComboBox:disabled {
@@ -614,7 +625,7 @@ QLineEdit {
     background-color: #181818;
     padding: 1px 3px;
     color: #DDD;
-    border: 2px solid #444;
+    border: 2px solid #555;
 }
 
 QLineEdit[widget-style="round"] {
@@ -629,7 +640,7 @@ QLineEdit[widget-style="round"]:hover {
 }
 
 QLineEdit:hover {
-    border: 2px solid #555;
+    border-color: #666;;
 }
 
 QLineEdit:focus {
@@ -645,11 +656,11 @@ QTextEdit {
     background-color: #181818;
     padding: 1px 3px;
     color: #DDD;
-    border: 2px solid #444;
+    border: 2px solid #555;
 }
 
 QTextEdit:hover {
-    border: 2px solid #555;
+    border-color: #666;;
 }
 
 QTextEdit:focus {
@@ -661,11 +672,11 @@ QPlainTextEdit {
     background-color: #181818;
     padding: 1px 3px;
     color: #DDD;
-    border: 2px solid #444;
+    border: 2px solid #555;
 }
 
 QPlainTextEdit:hover {
-    border: 2px solid #555;
+    border-color: #666;;
 }
 
 QPlainTextEdit:focus {
@@ -677,15 +688,15 @@ QSpinBox {
     background-color: #181818;
     padding: 1px 3px;
     color: #DDD;
-    border: 2px solid #444;
-}
-
-QSpinBox:hover {
     border: 2px solid #555;
 }
 
+QSpinBox:hover {
+    border-color: #666;
+}
+
 QSpinBox:focus {
-    border: 2px solid #788;
+    border-color: #788;
 }
 
 QSpinBox:disabled {
@@ -697,15 +708,15 @@ QDoubleSpinBox {
     background-color: #181818;
     padding: 1px 3px;
     color: #DDD;
-    border: 2px solid #444;
-}
-
-QDoubleSpinBox:hover {
     border: 2px solid #555;
 }
 
+QDoubleSpinBox:hover {
+    border-color: #666;
+}
+
 QDoubleSpinBox:focus {
-    border: 2px solid #788;
+    border-color: #788;
 }
 
 QDoubleSpinBox:disabled {
@@ -714,7 +725,7 @@ QDoubleSpinBox:disabled {
 
 QDateEdit {
     background-color: #444;
-    border: 2px solid #444;
+    border: 2px solid #555;
     border-radius: 4px;
     padding: 1px 0px 1px 3px;
     color: #DDD;
@@ -729,7 +740,7 @@ QComboBox::editable:focus {
 }
 
 QDateEdit:hover {
-    border: 2px solid #555;
+    border-color: #666;;
 }
 
 QDateEdit:disabled {
