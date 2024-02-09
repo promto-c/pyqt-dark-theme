@@ -159,6 +159,13 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
     background: None;
 }
 
+QSplitter::handle {
+    background-color: #000;
+}
+QSplitter::handle:hover {
+    background-color: #ABC;
+}
+
 /* Display Widgets */
 
 QLabel {
