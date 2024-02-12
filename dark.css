@@ -463,6 +463,10 @@ QListView:disabled {
     color: #666;
 }
 
+QListView:focus {
+    border-color: #788;
+}
+
 QListView::item {
     border: 1px solid #222;
 }
@@ -502,6 +506,10 @@ QTreeView:disabled {
 
 QTreeView:hover {
     border-color: #555;
+}
+
+QTreeView:focus {
+    border-color: #788;
 }
 
 QTreeView::item {
