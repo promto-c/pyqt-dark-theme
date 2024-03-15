@@ -243,10 +243,6 @@ QPushButton:checked[widget-style="borderless"] {
     color: #999;
 }
 
-/* QPushButton:focus[widget-style="borderless"] {
-    border: 2px solid #788;
-} */
-
 QPushButton[widget-style="round"] {
     background-color: transparent;
     color: #AAA;
@@ -260,6 +256,18 @@ QPushButton[widget-style="round"]:hover {
 }
 QPushButton[widget-style="round"]:focus {
     border-color: #788;
+}
+
+QPushButton[widget-style="action-clear"] {
+    border-radius: 8px;
+    font-size: 8pt;
+    border-color: transparent;
+    color: #EEE;
+    background-color: #566;
+}
+QPushButton[widget-style="action-clear"]:hover {
+    color: #FFF;
+    background-color: #C20;
 }
 
 QPushButton[color="blue"] {
@@ -285,7 +293,6 @@ QPushButton[color="blue"]:pressed {
                                 stop:0.1 rgba(26, 151, 196, 125), 
                                 stop:1 rgba(0, 123, 196, 125));
 }
-
 
 QPushButton[color="red"] {
     background-color: #F44;
