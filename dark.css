@@ -421,6 +421,10 @@ QRadioButton:checked {
 
 /* Item Widgets */
 
+QHeaderView {
+    border-radius: 5px;
+}
+
 QHeaderView:section {
     color: #999;
     background: #333;
