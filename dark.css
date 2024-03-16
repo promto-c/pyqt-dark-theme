@@ -436,8 +436,8 @@ QHeaderView:section {
     color: #999;
     background: #333;
     border: 1px solid #222;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     padding: 2px 4px;
 }
 
@@ -489,7 +489,7 @@ QListView::item:hover {
 QTreeView {
     border: 2px solid #444;
     background-color: #181818;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 0px;
     padding-bottom: 6px;
     color: #DDD;
