@@ -596,10 +596,20 @@ QComboBox::drop-down:button {
     border-radius: 4px;
 }
 
+QPushButton::menu-indicator {
+    image: url(icons/drop-down.svg);
+    width: 12px;
+    height: 12px;
+    subcontrol-position: right center;
+    padding-right: 4;
+    /* subcontrol-origin: padding; */
+}
+
 QComboBox::down-arrow {
     image: url(icons/drop-down.svg);
     width: 12px;
     height: 12px;
+    padding-right: 4;
 }
 
 QComboBox[widget-style="round"] {
