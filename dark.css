@@ -258,6 +258,12 @@ QPushButton[widget-style="round"]:focus {
     border-color: #788;
 }
 
+QPushButton[widget-style="round"]:pressed {
+    background-color: #222;
+    border-color: #444;
+    color: #888;
+}
+
 QPushButton[widget-style="action-clear"] {
     border-radius: 8px;
     font-size: 8pt;
