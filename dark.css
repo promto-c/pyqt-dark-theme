@@ -248,6 +248,7 @@ QPushButton[widget-style="round"] {
     color: #AAA;
     border-color: #666;
     text-align: left;
+    padding-left: 6;
     border-radius: 12px;
 }
 QPushButton[widget-style="round"]:hover {
@@ -262,6 +263,19 @@ QPushButton[widget-style="round"]:pressed {
     background-color: #222;
     border-color: #444;
     color: #888;
+}
+
+QPushButton[active="true"] {
+    background-color: rgba(119, 170, 187, 51);
+    border-color: #7AB;
+    color: #DDD;
+}
+QPushButton[active="true"]:hover {
+    border-color: #8BC;
+    color: #DDD;
+}
+QPushButton[widget-style="round"][active="true"]:focus {
+    border-color: #7BC;
 }
 
 QPushButton[widget-style="action-clear"] {
