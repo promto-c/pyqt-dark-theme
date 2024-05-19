@@ -345,7 +345,15 @@ QPushButton[color="yellow"]:hover {
 }
 QPushButton[color="yellow"]:pressed {
     background-color: #DB2;
+}
 
+QPushButton::menu-indicator {
+    image: url(icons/drop-down.svg);
+    width: 12px;
+    height: 12px;
+    subcontrol-position: right center;
+    padding-right: 4;
+    /* subcontrol-origin: padding; */
 }
 
 QToolButton {
@@ -616,15 +624,6 @@ QComboBox::drop-down:button {
     border-radius: 4px;
 }
 
-QPushButton::menu-indicator {
-    image: url(icons/drop-down.svg);
-    width: 12px;
-    height: 12px;
-    subcontrol-position: right center;
-    padding-right: 4;
-    /* subcontrol-origin: padding; */
-}
-
 QComboBox::down-arrow {
     image: url(icons/drop-down.svg);
     width: 12px;
@@ -705,6 +704,19 @@ QLineEdit:focus {
 
 QLineEdit[has-placeholder="true"][text=""]{
     color: gray;
+}
+
+QLineEdit[active="true"] {
+    background-color: rgba(119, 170, 187, 51);
+    border-color: #7AB;
+    color: #DDD;
+}
+QLineEdit[active="true"]:hover {
+    border-color: #8BC;
+    color: #DDD;
+}
+QLineEdit[widget-style="round"][active="true"]:focus {
+    border-color: #7BC;
 }
 
 QTextEdit {
