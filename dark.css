@@ -183,6 +183,17 @@ QLabel:focus {
     border: 2px solid #788;
 }
 
+QLabel#embedder_label {
+    border-top-left-radius: 6;
+    border-top-right-radius: 6;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #999;
+    background-color: #444;
+    padding: 0px 12px;
+    font-size: 10px;
+}
+
 /* Buttons */
 QPushButton {
     background-color: #444;
