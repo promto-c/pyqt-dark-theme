@@ -188,10 +188,14 @@ QLabel#embedder_label {
     border-top-right-radius: 6;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    color: #999;
+    color: #AAA;
     background-color: #444;
     padding: 0px 12px;
     font-size: 10px;
+}
+
+QWidget[is_embedded="true"] {
+    border-top-left-radius: 0;
 }
 
 /* Buttons */
