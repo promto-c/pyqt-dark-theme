@@ -839,3 +839,32 @@ QDateEdit::down-arrow {
     width: 12px;
     height: 12px;
 }
+
+/* Custom */
+ContextMenu QLabel {
+    color: #999;
+    padding: 6px;
+}
+
+TagListView::item {
+    background-color: #355;
+    border-radius: 4px;
+    border: transparent;
+    padding: 2px 5px;
+    color: #DDD;
+    margin: 2px;
+}
+TagListView::item:hover {
+    background-color: #466;
+}
+TagListView::item:pressed {
+    background-color: #244;
+}
+
+InlineConfirmButton QPushButton {
+    background-color: #222;
+    border: none;
+}
+InlineConfirmButton QPushButton:hover {
+    background-color: #444;
+}
