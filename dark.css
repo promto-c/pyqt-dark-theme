@@ -280,19 +280,6 @@ QPushButton[widget-style="round"]:pressed {
     color: #888;
 }
 
-QPushButton[active="true"] {
-    background-color: rgba(119, 170, 187, 51);
-    border-color: #7AB;
-    color: #DDD;
-}
-QPushButton[active="true"]:hover {
-    border-color: #8BC;
-    color: #DDD;
-}
-QPushButton[widget-style="round"][active="true"]:focus {
-    border-color: #7BC;
-}
-
 QPushButton[widget-style="action-clear"] {
     border-radius: 8px;
     font-size: 8pt;
@@ -867,4 +854,39 @@ InlineConfirmButton QPushButton {
 }
 InlineConfirmButton QPushButton:hover {
     background-color: #444;
+}
+
+FilterPopupButton {
+    background-color: transparent;
+    color: #AAA;
+    border-color: #666;
+    text-align: left;
+    padding-left: 6;
+    border-radius: 12px;
+}
+FilterPopupButton:hover {
+    color: #CCC;
+    border-color: #888;
+}
+FilterPopupButton:focus {
+    border-color: #788;
+}
+
+FilterPopupButton:pressed {
+    background-color: #222;
+    border-color: #444;
+    color: #888;
+}
+
+FilterPopupButton[active="true"] {
+    background-color: rgba(119, 170, 187, 51);
+    border-color: #7AB;
+    color: #DDD;
+}
+FilterPopupButton[active="true"]:hover {
+    border-color: #8BC;
+    color: #DDD;
+}
+FilterPopupButton[active="true"]:focus {
+    border-color: #7BC;
 }
