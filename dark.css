@@ -259,25 +259,9 @@ QPushButton:checked[widget-style="borderless"] {
 }
 
 QPushButton[widget-style="round"] {
-    background-color: transparent;
-    color: #AAA;
-    border-color: #666;
     text-align: left;
-    padding-left: 6;
-    border-radius: 12px;
-}
-QPushButton[widget-style="round"]:hover {
-    color: #CCC;
-    border-color: #888;
-}
-QPushButton[widget-style="round"]:focus {
-    border-color: #788;
-}
-
-QPushButton[widget-style="round"]:pressed {
-    background-color: #222;
-    border-color: #444;
-    color: #888;
+    padding-left: 8;
+    border-radius: 11px;
 }
 
 QPushButton[widget-style="action-clear"] {
@@ -356,6 +340,10 @@ QPushButton::menu-indicator {
     subcontrol-position: right center;
     padding-right: 4;
     /* subcontrol-origin: padding; */
+}
+
+QToolBar {
+    padding: 0;
 }
 
 QToolButton {
@@ -859,9 +847,9 @@ InlineConfirmButton QPushButton:hover {
 FilterPopupButton {
     background-color: transparent;
     color: #AAA;
-    border-color: #666;
+    border: 2px solid #666;
     text-align: left;
-    padding-left: 6;
+    padding-left: 8px;
     border-radius: 12px;
 }
 FilterPopupButton:hover {
@@ -871,13 +859,11 @@ FilterPopupButton:hover {
 FilterPopupButton:focus {
     border-color: #788;
 }
-
 FilterPopupButton:pressed {
     background-color: #222;
     border-color: #444;
     color: #888;
 }
-
 FilterPopupButton[active="true"] {
     background-color: rgba(119, 170, 187, 51);
     border-color: #7AB;
@@ -885,7 +871,6 @@ FilterPopupButton[active="true"] {
 }
 FilterPopupButton[active="true"]:hover {
     border-color: #8BC;
-    color: #DDD;
 }
 FilterPopupButton[active="true"]:focus {
     border-color: #7BC;
