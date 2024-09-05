@@ -344,6 +344,7 @@ QPushButton::menu-indicator {
 
 QToolBar {
     padding: 0;
+    spacing: 4px;
 }
 
 QToolButton {
