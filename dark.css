@@ -876,3 +876,11 @@ FilterPopupButton[active="true"]:hover {
 FilterPopupButton[active="true"]:focus {
     border-color: #7BC;
 }
+
+QTreeView QListView {
+    border: 0px;
+    background: transparent;
+}
+QTreeView QListView:hover {
+    border: 0px;
+}
