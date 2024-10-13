@@ -151,7 +151,7 @@ QScrollBar::sub-line:horizontal {
     subcontrol-origin: margin;
 }
 
-QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:verhorizontaltical {
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal {
     background: None;
 }
 
@@ -343,8 +343,20 @@ QPushButton::menu-indicator {
 }
 
 QToolBar {
+    background-color: #333;
     padding: 0;
     spacing: 4px;
+    border: 0px;
+}
+
+QToolBar::handle:horizontal {
+    image: url(icons/grip-vertical.svg);
+    width: 16px;
+}
+
+QToolBar::handle:vertical {
+    image: url(icons/grip-horizontal.svg);
+    height: 16px;
 }
 
 QToolButton {
