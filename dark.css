@@ -609,6 +609,10 @@ QComboBox {
     color: #DDD;
 }
 
+QComboBox QAbstractItemView {
+    background-color: #444;
+}
+
 QComboBox:focus {
     border: 2px solid #788;
 }
