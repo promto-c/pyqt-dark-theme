@@ -230,7 +230,7 @@ QPushButton:checked {
     color: #999;
 }
 
-QPushButton[widget-style="borderless"] {
+QPushButton[widget-style="dialog"] {
     border: 0px solid;
     border-radius: 4px;
     padding: 4px 8px;
@@ -238,24 +238,30 @@ QPushButton[widget-style="borderless"] {
     color: #DDD;
 }
 
-QPushButton:hover[widget-style="borderless"] {
+QPushButton:hover[widget-style="dialog"] {
     background-color: #555;
 }
 
-QPushButton:pressed[widget-style="borderless"] {
+QPushButton:pressed[widget-style="dialog"] {
     background-color: #333;
     color: #888;
 }
 
-QPushButton:disabled[widget-style="borderless"] {
-    background-color: #222;
-    color: #999;
+QPushButton[widget-style="borderless"] {
+    border: none;
+    border-radius: 4px;
+    padding: 0px;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: #DDD;
 }
 
-QPushButton:checked[widget-style="borderless"] {
-    background-color: #222;
-    border: 2px solid #788;
-    color: #999;
+QPushButton:hover[widget-style="borderless"] {
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+QPushButton:pressed[widget-style="borderless"] {
+    background-color: rgba(128, 128, 128, 0.1);
+    color: #888;
 }
 
 QPushButton[widget-style="round"] {
