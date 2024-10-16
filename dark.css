@@ -523,6 +523,10 @@ QListView::item:hover {
     border-color: #444;
 }
 
+QListView::item:selected {
+    background-color: rgba(144, 165, 165, 65);
+}
+
 QTreeView {
     border: 2px solid #444;
     background-color: #181818;
@@ -597,6 +601,10 @@ QTableView::item {
 QTableView::item:hover {
     border-color: #444;
     color: #DDD;
+}
+
+QTableView::item:selected {
+    background-color: rgba(144, 165, 165, 65);
 }
 
 /* Input Widgets */
