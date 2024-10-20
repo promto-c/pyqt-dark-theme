@@ -159,6 +159,9 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
     background: None;
 }
 
+QSplitter {
+    background: transparent;
+}
 QSplitter::handle {
     background-color: #000;
 }
@@ -409,7 +412,7 @@ QToolButton[color="red"]:hover {
 }
 
 QToolButton:checked {
-    background-color: #222;
+    background-color: #333;
 }
 
 QCheckBox {
