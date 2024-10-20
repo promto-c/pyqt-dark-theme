@@ -356,6 +356,10 @@ QToolBar {
     border-radius: 4px;
 }
 
+QToolBar[widget-style="overlay"] {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
 QToolBar::handle:horizontal {
     image: url(icons/grip-vertical.svg);
     width: 16px;
@@ -369,28 +373,26 @@ QToolBar::handle:vertical {
 QToolButton {
     border-radius: 4px;
     background-color: transparent;
-    padding: 1px;
-    border: 2px solid transparent;
+    padding: 0px;
     color: #DDD;
 }
 
 QToolButton:hover {
-    background-color: #444;
+    background-color: rgba(128, 128, 128, 0.4);
 }
 
 QToolButton:pressed {
-    background-color: #222;
+    background-color: rgba(128, 128, 128, 0.1);
     color: #888;
-    border-color: #333;
 }
 
 QToolButton:disabled {
     background-color: #222;
-    border-color: #333;
     color: #999;
 }
 
 QToolButton[widget-style="round"] {
+    border: 2px solid transparent;
     border-radius: 12px;
 }
 QToolButton[widget-style="round"]:hover {
@@ -408,7 +410,6 @@ QToolButton[color="red"]:hover {
 
 QToolButton:checked {
     background-color: #222;
-    border-color: #888;
 }
 
 QCheckBox {
@@ -531,6 +532,15 @@ QListView::item:hover {
 
 QListView::item:selected {
     background-color: rgba(144, 165, 165, 65);
+}
+
+GalleryWidget::item {
+    background-color: #333;
+    border-radius: 10px;
+}
+GalleryWidget::item:selected {
+    background-color: #555;
+    border-color: #788;
 }
 
 QTreeView {
