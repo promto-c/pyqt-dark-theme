@@ -357,7 +357,7 @@ QToolBar {
 }
 
 QToolBar[widget-style="overlay"] {
-    background-color: rgba(128, 128, 128, 0.2);
+    background-color: rgba(87, 87, 87, 0.8);
 }
 
 QToolBar::handle:horizontal {
@@ -929,4 +929,89 @@ QTreeView QListView {
 }
 QTreeView QListView:hover {
     border: 0px;
+}
+
+/* QSlider */
+QSlider {
+    background-color: transparent;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #444;
+    height: 6px;
+    background: #222;
+    border-radius: 3px;
+}
+
+QSlider::handle:horizontal {
+    background: #555;
+    border: 0px solid #666;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin: -3px 0; /* Offset to center the handle */
+}
+
+QSlider::handle:horizontal:hover {
+    background: #777;
+    border-color: #888;
+}
+
+QSlider::handle:horizontal:pressed {
+    background: #444;
+    border-color: #555;
+}
+
+QSlider::sub-page:horizontal {
+    background: #333;
+    border: 1px solid #222;
+    height: 6px;
+    border-radius: 3px;
+}
+
+QSlider::add-page:horizontal {
+    background: #333;
+    border: 1px solid #222;
+    height: 6px;
+    border-radius: 3px;
+}
+
+QSlider::groove:vertical {
+    border: 1px solid #444;
+    width: 6px;
+    background: #222;
+    border-radius: 3px;
+}
+
+QSlider::handle:vertical {
+    background: #555;
+    border: 1px solid #666;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin: 0 -3px; /* Offset to center the handle */
+}
+
+QSlider::handle:vertical:hover {
+    background: #777;
+    border-color: #888;
+}
+
+QSlider::handle:vertical:pressed {
+    background: #444;
+    border-color: #555;
+}
+
+QSlider::sub-page:vertical {
+    background: #333;
+    border: 1px solid #222;
+    width: 6px;
+    border-radius: 3px;
+}
+
+QSlider::add-page:vertical {
+    background: #333;
+    border: 1px solid #222;
+    width: 6px;
+    border-radius: 3px;
 }
