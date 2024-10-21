@@ -1,0 +1,117 @@
+/* Main Window */
+QMainWindow {
+    background-color: #c0c0c0;
+    border: 2px outset #fff;
+}
+
+QMenuBar {
+    background-color: #c0c0c0;
+    border: 1px solid #000;
+}
+
+QMenu {
+    background-color: #c0c0c0;
+    border: 1px solid #000;
+}
+
+QMenu::item:selected {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+/* Containers */
+QFrame, QDialog {
+    background-color: #c0c0c0;
+    border: 2px outset #fff;
+}
+
+QGroupBox {
+    border: 2px groove #808080;
+    margin-top: 10px;
+    background-color: #c0c0c0;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #c0c0c0;
+    border: 2px outset #808080;
+    padding: 2px;
+}
+
+QPushButton:pressed {
+    border: 2px inset #808080;
+    background-color: #c0c0c0;
+}
+
+QPushButton:disabled {
+    color: #808080;
+}
+
+/* Scroll Bars */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #c0c0c0;
+    width: 16px;
+    border: 1px solid #808080;
+}
+
+QScrollBar::handle {
+    background: #808080;
+    border: 1px solid #404040;
+}
+
+/* Labels */
+QLabel {
+    color: #000000;
+    background: transparent;
+}
+
+/* Checkboxes and Radio Buttons */
+QCheckBox, QRadioButton {
+    background-color: #c0c0c0;
+    color: #000000;
+}
+
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #000000;
+}
+
+/* List and Table Views */
+QListView, QTreeView, QTableView {
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+
+QTableView::item:selected, QListView::item:selected {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+/* Text Inputs */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #ffffff;
+    border: 2px inset #c0c0c0;
+    color: #000000;
+}
+
+/* ComboBox */
+QComboBox {
+    background-color: #ffffff;
+    border: 2px inset #c0c0c0;
+    padding: 2px;
+}
+
+/* Sliders */
+QSlider::groove:horizontal, QSlider::groove:vertical {
+    background-color: #c0c0c0;
+    border: 1px solid #000;
+}
+
+QSlider::handle:horizontal, QSlider::handle:vertical {
+    background-color: #808080;
+    border: 1px solid #404040;
+}

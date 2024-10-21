@@ -108,6 +108,41 @@ def set_theme(app, theme: str = 'dark') -> None:
         # Set theme style sheet
         app.setStyleSheet(get_style_sheet(theme))
 
+    # Check if the theme is set to 'classic'
+    elif theme == 'classic':
+        # Set the application style to 'Fusion'
+        app.setStyle('Fusion')
+
+        # Create a palette with classic Windows 95 colors
+        palette = QtGui.QPalette()
+
+        # Window colors
+        palette.setColor(QtGui.QPalette.ColorRole.Window, QtGui.QColor(192, 192, 192))  # Light grey
+        palette.setColor(QtGui.QPalette.ColorRole.WindowText, QtGui.QColor(0, 0, 0))    # Black
+
+        # Base and text colors
+        palette.setColor(QtGui.QPalette.ColorRole.Base, QtGui.QColor(255, 255, 255))    # White
+        palette.setColor(QtGui.QPalette.ColorRole.AlternateBase, QtGui.QColor(192, 192, 192))  # Light grey
+        palette.setColor(QtGui.QPalette.ColorRole.ToolTipBase, QtGui.QColor(255, 255, 220))  # Light yellow for tooltips
+        palette.setColor(QtGui.QPalette.ColorRole.ToolTipText, QtGui.QColor(0, 0, 0))   # Black for tooltip text
+
+        # Text colors
+        palette.setColor(QtGui.QPalette.ColorRole.Text, QtGui.QColor(0, 0, 0))          # Black
+        palette.setColor(QtGui.QPalette.ColorRole.Button, QtGui.QColor(192, 192, 192))  # Light grey
+        palette.setColor(QtGui.QPalette.ColorRole.ButtonText, QtGui.QColor(0, 0, 0))    # Black
+        palette.setColor(QtGui.QPalette.ColorRole.BrightText, QtGui.QColor(255, 0, 0))  # Red for bright text (e.g., error messages)
+
+        # Link colors and highlights
+        palette.setColor(QtGui.QPalette.ColorRole.Link, QtGui.QColor(0, 0, 255))        # Blue for links
+        palette.setColor(QtGui.QPalette.ColorRole.Highlight, QtGui.QColor(0, 0, 128))   # Dark blue for selected items
+        palette.setColor(QtGui.QPalette.ColorRole.HighlightedText, QtGui.QColor(255, 255, 255))  # White for highlighted text
+
+        # Apply the classic palette to the application
+        app.setPalette(palette)
+
+        # Set theme style sheet
+        app.setStyleSheet(get_style_sheet(theme))
+
     # Check if the theme is set to 'light'
     elif theme == 'light':
         # Set light theme specific settings
