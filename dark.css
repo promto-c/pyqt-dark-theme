@@ -389,6 +389,10 @@ QToolButton:pressed {
     color: #888;
 }
 
+QToolButton:checked {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 QToolButton:disabled {
     background-color: #222;
     color: #999;
@@ -409,10 +413,6 @@ QToolButton[widget-style="round"]:pressed {
 
 QToolButton[color="red"]:hover {
     background-color: #800;
-}
-
-QToolButton:checked {
-    background-color: #333;
 }
 
 QCheckBox {
