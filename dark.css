@@ -723,6 +723,14 @@ QLineEdit {
     border: 2px solid #555;
 }
 
+QLineEdit:hover {
+    border-color: #666;;
+}
+
+QLineEdit:focus {
+    border-color: #788;
+}
+
 QLineEdit[widget-style="round"] {
     background-color: transparent;
     border-color: #666;
@@ -734,12 +742,13 @@ QLineEdit[widget-style="round"]:hover {
     border-color: #888;
 }
 
-QLineEdit:hover {
-    border-color: #666;;
+QLineEdit[widget-style="borderless"] {
+    background-color: transparent;
+    border: 0px;
+    text-align: left;
 }
-
-QLineEdit:focus {
-    border: 2px solid #788;
+QLineEdit[widget-style="borderless"]:hover {
+    color: #CCC;
 }
 
 QLineEdit[has-placeholder="true"][text=""]{
@@ -1017,4 +1026,15 @@ QSlider::add-page:vertical {
     border: 1px solid #222;
     width: 6px;
     border-radius: 3px;
+}
+
+SimpleSearchWidget {
+    background-color: transparent;
+    border: 2px solid #666;
+    text-align: left;
+    border-radius: 12px;
+}
+SimpleSearchWidget:hover {
+    color: #CCC;
+    border-color: #888;
 }
