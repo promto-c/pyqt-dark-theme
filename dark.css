@@ -747,9 +747,6 @@ QLineEdit[widget-style="borderless"] {
     border: 0px;
     text-align: left;
 }
-QLineEdit[widget-style="borderless"]:hover {
-    color: #CCC;
-}
 
 QLineEdit[has-placeholder="true"][text=""]{
     color: gray;
@@ -1034,7 +1031,22 @@ SimpleSearchWidget {
     text-align: left;
     border-radius: 12px;
 }
+
 SimpleSearchWidget:hover {
     color: #CCC;
     border-color: #888;
+}
+
+SimpleSearchWidget[in-focus="true"] {
+    border: 2px solid #788;
+}
+
+SimpleSearchWidget[active="true"] {
+    background-color: rgba(119, 170, 187, 51);
+    border-color: #7AB;
+    color: #DDD;
+
+}
+SimpleSearchWidget[active="true"]:hover {
+    border-color: #8BC;
 }
