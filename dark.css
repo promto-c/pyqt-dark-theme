@@ -920,15 +920,15 @@ FilterButton:pressed {
     border-color: #444;
     color: #888;
 }
-FilterButton[active="true"] {
+FilterButton:checked {
     background-color: rgba(119, 170, 187, 51);
     border-color: #7AB;
     color: #DDD;
 }
-FilterButton[active="true"]:hover {
+FilterButton:checked:hover {
     border-color: #8BC;
 }
-FilterButton[active="true"]:focus {
+FilterButton:checked:focus {
     border-color: #7BC;
 }
 
