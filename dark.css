@@ -900,7 +900,7 @@ InlineConfirmButton QPushButton:hover {
     background-color: #444;
 }
 
-FilterPopupButton {
+FilterButton {
     background-color: transparent;
     color: #AAA;
     border: 2px solid #666;
@@ -908,27 +908,27 @@ FilterPopupButton {
     padding-left: 8px;
     border-radius: 12px;
 }
-FilterPopupButton:hover {
+FilterButton:hover {
     color: #CCC;
     border-color: #888;
 }
-FilterPopupButton:focus {
+FilterButton:focus {
     border-color: #788;
 }
-FilterPopupButton:pressed {
+FilterButton:pressed {
     background-color: #222;
     border-color: #444;
     color: #888;
 }
-FilterPopupButton[active="true"] {
+FilterButton[active="true"] {
     background-color: rgba(119, 170, 187, 51);
     border-color: #7AB;
     color: #DDD;
 }
-FilterPopupButton[active="true"]:hover {
+FilterButton[active="true"]:hover {
     border-color: #8BC;
 }
-FilterPopupButton[active="true"]:focus {
+FilterButton[active="true"]:focus {
     border-color: #7BC;
 }
 
