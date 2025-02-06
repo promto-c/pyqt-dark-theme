@@ -17,6 +17,7 @@ QMenu {
     border: 2px solid #444;
     background-color: #111;
     border-radius: 8px;
+    padding: 6px 0px;
 }
 
 QMenu::item:disabled {
@@ -343,7 +344,7 @@ QPushButton[color="yellow"]:pressed {
 }
 
 QPushButton::menu-indicator {
-    image: url(icons/drop-down.svg);
+    image: url(icons/down-arrow.svg);
     width: 12px;
     height: 12px;
     subcontrol-position: right center;
@@ -665,7 +666,7 @@ QComboBox::drop-down:button {
 }
 
 QComboBox::down-arrow {
-    image: url(icons/drop-down.svg);
+    image: url(icons/down-arrow.svg);
     width: 12px;
     height: 12px;
     padding-right: 4;
@@ -866,9 +867,63 @@ QDateEdit::drop-down:button {
 }
 
 QDateEdit::down-arrow {
-    image: url(icons/drop-down.svg);
+    image: url(icons/down-arrow.svg);
     width: 12px;
     height: 12px;
+}
+
+QTimeEdit {
+    background-color: #222;      /* Widget background */
+    color: #DDD;                 /* Text color */
+    border: 2px solid #555;      /* Border style */
+    border-radius: 6px;          /* Rounded corners */
+    padding: 2px 5px;
+}
+
+QTimeEdit:hover {
+    border-color: #666;          /* Border color when hovered */
+}
+
+QTimeEdit:focus {
+    border-color: #788;          /* Border color when focused */
+}
+
+/* Up & Down Buttons */
+QTimeEdit::up-button {
+    subcontrol-position: top right; /* Top-right corner */
+    border: none;
+    background-color: #555;      /* Button color */
+    width: 18;                 /* Button size */
+    border-top-right-radius: 4px;
+}
+
+QTimeEdit::up-button:hover {
+    background-color: #666;      /* Highlight color on hover */
+}
+
+QTimeEdit::down-button {
+    subcontrol-position: bottom right; /* Bottom-right corner */
+    border: none;
+    background-color: #555;
+    width: 18;
+    border-bottom-right-radius: 4px;
+}
+
+QTimeEdit::down-button:hover {
+    background-color: #666;      /* Highlight color on hover */
+}
+
+/* Arrow Styles */
+QTimeEdit::up-arrow {
+    image: url(icons/up-arrow.svg); /* Replace with your icon */
+    width: 16;
+    padding-right: 2;
+}
+
+QTimeEdit::down-arrow {
+    image: url(icons/down-arrow.svg); /* Replace with your icon */
+    width: 16;
+    padding-right: 2;
 }
 
 /* Custom */
