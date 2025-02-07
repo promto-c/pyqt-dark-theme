@@ -1093,15 +1093,15 @@ SimpleSearchWidget:hover {
 }
 
 SimpleSearchWidget[in-focus="true"] {
-    border: 2px solid #788;
+    border-color: #788;
 }
 
 SimpleSearchWidget[active="true"] {
     background-color: rgba(119, 170, 187, 51);
     border-color: #7AB;
     color: #DDD;
-
 }
+
 SimpleSearchWidget[active="true"]:hover {
     border-color: #8BC;
 }
