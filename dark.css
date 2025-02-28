@@ -1105,3 +1105,14 @@ SimpleSearchWidget[active="true"] {
 SimpleSearchWidget[active="true"]:hover {
     border-color: #8BC;
 }
+
+DoubleSpinBoxWidget QPushButton {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0px;
+}
+
+DoubleSpinBoxWidget QDoubleSpinBox {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
