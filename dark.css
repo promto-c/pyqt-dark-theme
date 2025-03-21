@@ -1120,3 +1120,13 @@ DoubleSpinBoxWidget QDoubleSpinBox {
 ControllerBarWidget {
     background: transparent;
 }
+
+TearOffButton {
+    background: transparent;
+    font-size: 12px;
+    padding: 0px;
+}
+
+TearOffButton:hover {
+    background-color: #222;
+}
