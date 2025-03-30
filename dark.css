@@ -89,6 +89,10 @@ QScrollBar:handle:vertical {
     margin: 2;
 }
 
+QScrollBar::handle:vertical:hover {
+    background: #666;
+}
+
 QScrollBar::add-line:vertical {
     border: None;
     background: #222;
@@ -130,6 +134,10 @@ QScrollBar:handle:horizontal {
     min-width: 20px;
     border-radius: 3px;
     margin: 2;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #666;
 }
 
 QScrollBar::add-line:horizontal {
@@ -1123,6 +1131,8 @@ ControllerBarWidget {
 
 TearOffButton {
     background: transparent;
+    color: #999;
+    border: 0px;
     font-size: 12px;
     padding: 0px;
 }
