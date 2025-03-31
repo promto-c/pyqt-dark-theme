@@ -213,10 +213,19 @@ QWidget[is_embedded="true"] {
 /* Buttons */
 QPushButton {
     background-color: #444;
-    border: 2px solid #555;
     border-radius: 4px;
-    padding: 1px 3px;
+    padding: 3px 5px;
     color: #DDD;
+}
+
+PlayerWidget QPushButton[borderness="thin"] {
+    border: 1px solid #555;
+    padding: 1px 3px;
+}
+
+PlayerWidget QPushButton[borderness="thick"] {
+    border: 2px solid #555;
+    padding: 1px 3px;
 }
 
 QPushButton:hover {
@@ -1139,4 +1148,14 @@ TearOffButton {
 
 TearOffButton:hover {
     background-color: #222;
+}
+
+PlayerWidget QPushButton {
+    border: 2px solid #555;
+    padding: 1px 3px;
+}
+
+GalleryManipulationToolBar QPushButton {
+    border: 2px solid #555;
+    padding: 1px 3px;
 }
