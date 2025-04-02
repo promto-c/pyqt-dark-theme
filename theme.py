@@ -90,7 +90,7 @@ def set_theme(app, theme: str = 'dark') -> None:
 
         # Create a palette with dark colors
         palette = QtGui.QPalette()
-        palette.setColor(QtGui.QPalette.ColorRole.Window, QtGui.QColor(44, 44, 44))
+        palette.setColor(QtGui.QPalette.ColorRole.Window, QtGui.QColor(50, 50, 50))
         palette.setColor(QtGui.QPalette.ColorRole.WindowText, QtGui.QColor(246, 246, 246))
         palette.setColor(QtGui.QPalette.ColorRole.Base, QtGui.QColor(29, 29, 29))
         palette.setColor(QtGui.QPalette.ColorRole.AlternateBase, QtGui.QColor(53, 53, 53))

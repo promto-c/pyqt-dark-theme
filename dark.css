@@ -1159,3 +1159,8 @@ GalleryManipulationToolBar QPushButton {
     border: 2px solid #555;
     padding: 1px 3px;
 }
+
+EdgeAwareScrollArea {
+    background: #333;
+    border: 0px;
+}
