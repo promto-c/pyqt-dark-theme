@@ -218,6 +218,15 @@ QPushButton {
     color: #DDD;
 }
 
+QPushButton:flat {
+    background-color: transparent;
+    color: #AAA;
+}
+
+QPushButton:flat:hover {
+    color: #DDD;
+}
+
 PlayerWidget QPushButton[borderness="thin"] {
     border: 1px solid #555;
     padding: 1px 3px;
