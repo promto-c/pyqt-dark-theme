@@ -212,7 +212,7 @@ QWidget[is_embedded="true"] {
 
 /* Buttons */
 QPushButton {
-    background-color: #444;
+    background-color: #555;
     border-radius: 4px;
     padding: 3px 5px;
     color: #DDD;
@@ -447,24 +447,24 @@ QCheckBox {
 }
 
 QCheckBox::indicator {
-    border: 3px solid #333;
-    width: 15px;
-    height: 15px;
-    border-radius: 7px;
-    background: #222;
+    border: 2px solid #333;
+    width: 12;
+    height: 12;
+    border-radius: 4px;
+    background: solid #222;
 }
 
 QCheckBox::indicator:hover {
-    border: 3px solid #444;
+    border-color: #444;
 }
 
 QCheckBox::indicator:checked {
-    background: solid #999;
-    border: 3px solid #344;
+    background-color: #999;
+    border-color: #566;
 }
 
 QCheckBox:hover {
-    color: #aaa;
+    color: #AAA;
 }
 
 QCheckBox:checked {
@@ -476,7 +476,7 @@ QRadioButton {
 }
 
 QRadioButton::indicator {
-    border: 3px solid #333;
+    border: 2px solid #333;
     width: 15px;
     height: 15px;
     border-radius: 9px;
@@ -484,12 +484,12 @@ QRadioButton::indicator {
 }
 
 QRadioButton::indicator:hover {
-    border: 3px solid #444;
+    border: #444;
 }
 
 QRadioButton::indicator:checked {
     background: #999;
-    border: 3px solid #344;
+    border: #344;
 }
 
 QRadioButton:hover {
@@ -1172,4 +1172,14 @@ GalleryManipulationToolBar QPushButton {
 EdgeAwareScrollArea {
     background: #333;
     border: 0px;
+}
+
+DraggableItem {
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+DraggableItem:hover {  
+    background-color: rgba(255, 255, 255, 0.1);
 }
