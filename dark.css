@@ -1183,3 +1183,26 @@ DraggableItem {
 DraggableItem:hover {  
     background-color: rgba(255, 255, 255, 0.1);
 }
+
+SegmentedControl {
+    background-color: #111;
+    border-radius: 8px;
+}
+
+SegmentedControl QToolButton {
+    color: #b9bbd1;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px 10px;
+    background-color: transparent;
+}
+
+SegmentedControl QToolButton:checked {
+    background-color: #043;
+    border: 1px solid #198;
+    color: white;
+}
+
+SegmentedControl QToolButton:hover:!checked {
+    background-color: #222;
+}
